@@ -160,15 +160,6 @@ body {
     align-items: center;
     gap: 30px;
 }
-.main_left {
-}
-.main_image {
-}
-.main_img {
-}
-.main_right {
-    // margin-top: 100px;
-}
 .main_heading {
     font-size: 60px;
     font-weight: 500;
@@ -208,7 +199,136 @@ body {
 // MAIN_SECTION
 
 
+// REPRODUCT_CONTENT
 
+.reproduct_section {
+    margin-top: 70px;
+}
+
+.reproduct_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reproduct_text {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    color: $main-text;
+}
+
+.reproduct_btn_swipe {
+    display: flex;
+    gap: 0 30px;
+}
+
+.reproduct_button {
+    width: 126px;
+    height: 43px;
+    background: $main;
+    border-radius: 20px;
+    color: $main-text;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    transition: all .3s ease;
+}
+
+.reproduct_button:hover:not(.reproduct_button-active) {
+    background: $base;
+}
+
+.reproduct_button-active {
+    background: $swipe-btn;
+    color: $main-light;
+}
+
+.reproduct_block {
+    display: none;
+    gap: 30px;
+}
+
+.reproduct_block-active {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reproduct_block_full {
+    background: $main;
+    display: block;
+    max-width: 350px;
+    max-height: 730px;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.reproduct_img {
+    
+}
+
+.reproduct_author {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $non-prominent-text;
+}
+
+.reproduct_name {
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: $main-text;
+}
+
+.reproduct_lithography {
+    padding-top: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $main-text;
+}
+
+.reproduct_price {
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $base;
+}
+
+.reproduct_btn {
+    width: 310px;
+    height: 65px;
+    border: 1px solid $base;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    color: $base;
+}
+
+.reproduct_content {
+    margin-top: 30px;
+}
+
+
+
+// REPRODUCT_CONTENT
+
+
+@media (max-width: 1130px) {
+    .reproduct_block-active {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
 
 @media (max-width: 900px) {
     .main_heading {
@@ -222,6 +342,16 @@ body {
 
     .main_button {
         margin-top: 40px;
+    }
+
+    .reproduct_block_full {
+        max-width: 330px;
+        max-height: 730px;
+    }
+
+    .reproduct_btn {
+        width: 290px;
+        height: 65px;
     }
 }
 
@@ -261,6 +391,66 @@ body {
 
     .main_button {
         margin-top: 10px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .reproduct_top {
+        align-items: baseline;
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .reproduct_text {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .reproduct_block_full {
+        max-width: 240px;
+        max-height: 530px;
+    }
+
+    .reproduct_author {
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 19px;
+    }
+    
+    .reproduct_name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .reproduct_lithography {
+        padding-top: 10px;
+        font-size: 21px;
+        line-height: 19px;
+    }
+    
+    .reproduct_price {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .reproduct_btn {
+        margin-top: 10px;
+        width: 290px;
+        height: 65px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .reproduct_btn_swipe {
+        margin-top: 30px;
+        gap: 5px 10px;
+        flex-wrap: wrap;
+    }
+
+    .reproduct_btn {
+        width: 200px;
+        height: 50px;
         font-size: 18px;
         line-height: 21px;
     }
@@ -360,8 +550,16 @@ body {
         font-size: 18px;
         line-height: 21px;
     }
-}
 
+    .reproduct_top {
+        padding-left: 10px;
+    }
+
+    .reproduct_text {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
 
 @media (max-width: 255px) {
     .main_button {
