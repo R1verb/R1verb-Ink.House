@@ -133,13 +133,21 @@ body {
     font-weight: 500;
     line-height: 23px;
     color: $main-text;
+    transition: color .3s ease;
 }
 
-.cart_img {
-    max-width: 22px;
-    max-height: 22px;
-    width: 100%;
-    height: 100%;
+.nav_link:hover {
+    color: $base;
+}
+
+.cart-active {
+    display: none;
+}
+.cart path {
+    transition: stroke .3s ease;
+}
+.cart:hover path {
+    stroke: $base;
 }
 
 // HEADER
