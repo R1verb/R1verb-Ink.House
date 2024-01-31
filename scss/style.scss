@@ -14,7 +14,7 @@ body {
 }
 
 .scroll-active {
-    overscroll-behavior-y: contain;
+    overflow: hidden;
 }
 
 
