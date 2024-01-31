@@ -8,6 +8,24 @@ const mobileMenuLinks = document.querySelectorAll('.nav_list_mobile .nav_link');
 const reproductButtons = document.querySelectorAll('.reproduct_button');
 const reproductBlocks = document.querySelectorAll('.reproduct_block');
 
+const navListScroll = document.querySelectorAll('.nav_list a[href*="#"]');
+const navListMobileScroll = document.querySelectorAll('.nav_list_mobile a[href*="#"]');
+const footerNavListScroll = document.querySelectorAll('.footer_nav_list a[href*="#"]');
+
+const allNavLinks = [...navListScroll, ...navListMobileScroll, ...footerNavListScroll];
+
+for (let navLink of allNavLinks) {
+    navLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const blockID = navLink.getAttribute('href').substr(1);
+        
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+}
 
 
 window.onload = function() {
