@@ -7,14 +7,14 @@ const mobileMenuLinks = document.querySelectorAll('.nav_list_mobile .nav_link');
 const reproductButtons = document.querySelectorAll('.reproduct_button');
 const reproductBlocks = document.querySelectorAll('.reproduct_block');
 
-// window.onload = function() {
-//     setTimeout(function() {
-//         window.scrollTo({
-//             top: 0,
-//             behavior: 'smooth'
-//         });
-//     }, 10);
-// };
+window.onload = function() {
+    setTimeout(function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, 10);
+};
 
 document.querySelectorAll('.nav_link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
