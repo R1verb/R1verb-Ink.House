@@ -74,7 +74,7 @@ mobileMenuLinks.forEach(link => {
 
 if ('ontouchstart' in window || navigator.maxTouchPoints) {
     if (navList) {
-    navList.classList.add('nav_list-touch');
+        navList.classList.add('nav_list_mobile-touch');
     }
 }
 
