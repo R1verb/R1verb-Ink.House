@@ -74,7 +74,7 @@ mobileMenuLinks.forEach(link => {
 
 const closeMobileMenu = () => {
     const windowWidth = window.innerWidth;
-    if (windowWidth <= 200 || windowWidth > 500) {
+    if (windowWidth > 500) {
         mobileMenu.classList.remove('mobile_menu-active');
         navList.classList.remove('nav_list_mobile-active');
         cart.classList.remove('cart-active');
