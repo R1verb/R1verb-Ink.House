@@ -1,5 +1,6 @@
 const mobileMenu = document.querySelector('.mobile_menu');
 const navList = document.querySelector('.nav_list_mobile');
+const navListMain = document.querySelector('.nav_list');
 const scroll = document.querySelector('.scroll');
 const cart = document.querySelector('.cart');
 const mobileMenuLinks = document.querySelectorAll('.nav_list_mobile .nav_link');
@@ -57,6 +58,7 @@ mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('mobile_menu-active');
     navList.classList.toggle('nav_list_mobile-active');
     cart.classList.toggle('cart-active');
+    navListMain.classList.toggle('nav_list-active');
     scroll.classList.toggle('scroll-active');
 });
 
@@ -65,6 +67,7 @@ mobileMenuLinks.forEach(link => {
         mobileMenu.classList.remove('mobile_menu-active');
         navList.classList.remove('nav_list_mobile-active');
         cart.classList.remove('cart-active');
+        navListMain.classList.remove('nav_list-active');
         scroll.classList.remove('scroll-active');
     });
 });
@@ -74,6 +77,7 @@ const closeMobileMenu = () => {
         mobileMenu.classList.remove('mobile_menu-active');
         navList.classList.remove('nav_list_mobile-active');
         cart.classList.remove('cart-active');
+        navListMain.classList.remove('nav_list-active');
         scroll.classList.remove('scroll-active');
     }
 };
