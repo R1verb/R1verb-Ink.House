@@ -73,7 +73,8 @@ mobileMenuLinks.forEach(link => {
 });
 
 const closeMobileMenu = () => {
-    if (window.innerWidth > 576) {
+    const windowWidth = window.innerWidth;
+    if (windowWidth <= 200 || windowWidth > 500 || window.scrollY > 200) {
         mobileMenu.classList.remove('mobile_menu-active');
         navList.classList.remove('nav_list_mobile-active');
         cart.classList.remove('cart-active');
@@ -82,7 +83,9 @@ const closeMobileMenu = () => {
     }
 };
 
+window.addEventListener('scroll', closeMobileMenu);
 window.addEventListener('resize', closeMobileMenu);
+
 
 
 

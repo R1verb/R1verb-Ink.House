@@ -904,6 +904,10 @@ body {
         display: block;
     }
 
+    .nav_list_mobile-active .nav_item:nth-child(2) {
+        display: block;
+    }
+
     .nav_item:nth-child(1) {
         display: block;
     }
