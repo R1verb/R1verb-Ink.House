@@ -886,6 +886,10 @@ body {
         z-index: 2;
     }
 
+    .nav_list_mobile-touch .nav_list_mobile-active {
+        padding-top: 280px;
+    }
+
     .nav_list_mobile-active .nav_item {
         display: block;
     }
@@ -1040,12 +1044,6 @@ body {
 
     .footer_nav_social {
         flex-direction: column;
-    }
-}
-
-@media (max-height: 500px) {
-    .nav_list_mobile-touch .nav_list_mobile-active {
-        padding-top: 280px;
     }
 }
 
