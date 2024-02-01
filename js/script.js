@@ -74,7 +74,7 @@ mobileMenuLinks.forEach(link => {
 
 const closeMobileMenu = () => {
     const windowWidth = window.innerWidth;
-    if (windowWidth <= 500 || window.scrollY > 200) {
+    if (windowWidth <= 200 || windowWidth > 500) {
         mobileMenu.classList.remove('mobile_menu-active');
         navList.classList.remove('nav_list_mobile-active');
         cart.classList.remove('cart-active');
@@ -85,7 +85,6 @@ const closeMobileMenu = () => {
 
 window.addEventListener('scroll', closeMobileMenu);
 window.addEventListener('resize', closeMobileMenu);
-
 
 
 
