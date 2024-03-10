@@ -78,6 +78,16 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
     }
 }
 
+document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target)) {
+        mobileMenu.classList.remove('mobile_menu-active');
+        navList.classList.remove('nav_list_mobile-active');
+        cart.classList.remove('cart-active');
+        navListMain.classList.remove('nav_list-active');
+        scroll.classList.remove('scroll-active');
+    }
+});
+
 const closeMobileMenu = () => {
     const windowWidth = window.innerWidth;
     if (windowWidth > 500) {
